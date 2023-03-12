@@ -29,7 +29,6 @@ const Games = () => {
     const [game, setGame] = useState<TableRow>();
     const [openAddGame, setOpenAddGame] = useState(false);
     const [openEditGame, setOpenEditGame] = useState(false);
-    //   const [options, setOptions] = useState<any>(["All"]);
     const { RangePicker } = DatePicker;
     const { makeRequest, loading } = useAxios();
     const [gameId, setGameId] = useState("");

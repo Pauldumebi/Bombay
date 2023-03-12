@@ -2,41 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Mulish:wght@400&family=Ubuntu:wght@500&display=swap");
-/* @import "~antd/dist/antd.css"; */
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Table Styling */
 .rdt_TableRow {
-  border: none !important;
-  margin: 0.5rem 0;
+    border: none !important;
+    margin: 0.5rem 0;
 }
 
 .rdt_TableBody > * {
-  font-size: 1rem !important;
+    font-size: 1rem !important;
 }
 
 .rdt_TableHeadRow {
-  font-weight: 700;
-  font-size: 1.2rem;
-  border: none !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none !important;
 }
 
 .rdt_TableBody {
-  min-height: 15rem;
+    min-height: 15rem;
 }
 
 :root {
-  --blue: rgb(0,21,40);
-  --button-color: rgba(0, 31, 80, 0.751);
+    --blue: rgb(0, 21, 40);
+    --button-color: rgba(0, 31, 80, 0.751);
 }
 
-@media(max-width: 576px) { 
-  .ant-picker-panels { 
-    flex-direction: column;
-  } 
+@media (max-width: 576px) {
+    .ant-picker-panels {
+        flex-direction: column;
+    }
 }
