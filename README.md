@@ -95,3 +95,5 @@ Read more: `https://docs.github.com/en/repositories/creating-and-managing-reposi
 2. To install all packages used for this project open up terminal in your IDE and type the following command `yarn install` ![Installation](public/images/installation.png)
 3. After successful installation start up the project using `yarn start` ![Start app](public/images/start-app.png)
 4. Ctrl + Click on the link or ( Cmd + Click **Mac** ) shown in terminal after it has successfully compiled to view on the browser ![Interface](public/images/interface.png)
+
+website url: https://taupe-toffee-5c58cc.netlify.app/
