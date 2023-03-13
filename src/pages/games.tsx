@@ -1,5 +1,5 @@
 import CustomSelect from "components/custom-select";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import DataTable, { TableColumn } from "react-data-table-component";
 import moment from "moment";
 import AddGame from "../components/modals/add-game";
@@ -47,10 +47,6 @@ const Games = () => {
     );
     const { data, mutate, isGenerating } = useFetchGames(params);
     const games = reformData(data);
-
-    useEffect(() => {
-        localStorage.setItem("games-total", games.length.toString());
-    }, [games]);
 
     const deleteConfirmed = () => {
         deleteGame(gameId);
