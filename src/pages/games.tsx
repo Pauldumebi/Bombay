@@ -26,6 +26,7 @@ export interface TableRow {
 }
 
 const Games = () => {
+
     const [game, setGame] = useState<TableRow>();
     const [openAddGame, setOpenAddGame] = useState(false);
     const [openEditGame, setOpenEditGame] = useState(false);
@@ -116,7 +117,6 @@ const Games = () => {
                                     setShowModal(true);
                                     setGameId(row._id);
                                 }
-                                // deleteGame(row._id)
                             }
                         >
                             <AiTwotoneDelete />
@@ -131,7 +131,7 @@ const Games = () => {
             <Summary path="Games" count={games?.length}/>
             <div className="w-full items-center">
                 <div className="flex justify-between flex-wrap mb-4">
-                    {games.length > 0 && (
+                    {!isGenerating && (
                         <>
                             <CustomSelect
                                 label="Select a category"
